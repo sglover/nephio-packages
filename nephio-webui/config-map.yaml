@@ -14,6 +14,10 @@ data:
       # and can't be reached by others.
       baseUrl: http://192.168.56.60:32555 # kpt-set: ${backend-base-url}
       # Content Security Policy
+      cors:
+        origin: http://192.168.56.60:32555
+        methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
+        credentials: true
       csp:
         # Allows images to be pulled from GitHub and Nepio
         img-src: ["'self'", 'data:', 'https://raw.githubusercontent.com', 'https://nephio.org']
