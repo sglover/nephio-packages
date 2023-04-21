@@ -17,6 +17,7 @@ data:
       csp:
         # Allows images to be pulled from GitHub and Nepio
         img-src: ["'self'", 'data:', 'https://raw.githubusercontent.com', 'https://nephio.org']
+        upgrade-insecure-requests: false
 
     # Config as Data Plugin configuration
     configAsData:
